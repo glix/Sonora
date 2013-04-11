@@ -127,7 +127,7 @@
 				    </p>
 				</div>
 				<div class=" span3 pull-right">
-			    	<label>CALL: 623-214-2800</label>
+			    	<label class="contact_number">CALL: 623-214-2800</label>
 				</div>
 				<div id="map_canvas" style="height:300px; width:600px;">
 				    <script type="text/javascript">
@@ -139,7 +139,7 @@
 	        </div>
 	    </div>
     </section>
-    <section>
+    <!-- <section>
 		<div class="container">
             <div class="row">
                 <div class="span4">
@@ -165,7 +165,7 @@
                 </div>
             </div>
 	    </div>
-    </section>
+    </section> -->
     <footer>
 		<div class="container">
 	    	<div class="row">
