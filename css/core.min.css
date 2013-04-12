@@ -462,6 +462,7 @@ input[type="reset"]{
 .city_style li{
 	
 	color:#454545;
+	 list-style-image: url(../img/greyscale.png);
 }
 .services_button a{
 	background: #4289c9;
@@ -506,6 +507,7 @@ input[type="reset"]{
 .hero-unit li {
     line-height: 50px;
     font-weight:500;
+
 }
 .pull-right{
 	float:right;
@@ -541,7 +543,7 @@ label,input{
 .lower_img{
 	/*margin-top:-464px;
 	margin-left:403px;*/
-	opacity:0.2;
+	opacity:0.3;
 	margin-top:-5px;
 	/*margin-left:-78px;*/
 }
@@ -552,11 +554,42 @@ label,input{
 .first_container{
 	width:825px;
 	float:left;
+	position:relative;
+	/*margin-top:-467px;*/
 }
 .second_container{
-	float:left;
+	float:right;
 	width:370px;
+	position:relative;
+	/*margin-top:-467px;*/
 }
+.small_logo{
+	float:left;
+	margin-right:7px;
+	margin-top:8px;
+}
+.main-list{
+	list-style-image: url(../img/sub.png);
+	font-weight:700;
+}
+.main-list a{
+	color:#454545;
+}
+.main-list a:hover, a:active{
+	color:#000;
+}
+.sub_container{
+	width:100%;
+	border-top:5px solid #dedede;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;
+	margin-top:-488px;
+	position:absolute;
+
+}
+.archive_style{
+	width:140px;
+	float:left;
+}
+
 /* class: .btn-miss-piggy-loves-kermit-5,  color theme: Miss Piggy loves Kermit */
 .btn-miss-piggy-loves-kermit-5 { text-shadow: 0px -1px 0px #799104; color: #ffffff; background-color: #97AF22; background-image: -moz-linear-gradient(top, #b5cd40, #799104); background-image: -ms-linear-gradient(top, #b5cd40, #799104); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b5cd40), to(#799104)); background-image: -webkit-linear-gradient(top, #b5cd40, #799104); background-image: -o-linear-gradient(top, #b5cd40, #799104); background-image: linear-gradient(top, #b5cd40, #799104); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b5cd40', endColorstr='#799104', GradientType=0); border-color: #97AF22 #799104 #799104 #97AF22; border-color: rgba(0, 0, 0, 0.25) rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.25); }
 .btn-miss-piggy-loves-kermit-5:hover, .btn-miss-piggy-loves-kermit-5:active, .btn-miss-piggy-loves-kermit-5.active, .btn-miss-piggy-loves-kermit-5.disabled, .btn-miss-piggy-loves-kermit-5[disabled] { background-color: #799104; }
