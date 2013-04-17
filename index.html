@@ -30,6 +30,7 @@
 		<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
 		<link rel="stylesheet" href="css/lean-slider.css" type="text/css" />
 	    <link rel="stylesheet" href="css/sample-styles.css" type="text/css" />
+	    <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" />
 		
 		<!-- Facebook Open Graph -->
 		<!-- <meta property="og:image" content="http://pathtoimage.com/image.png">
@@ -41,6 +42,7 @@
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
 <!-- include Cycle plugin -->
 <script type="text/javascript" src="js/jquery.cycle.all.latest.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
 		<!--<script type="text/javascript" src="js/jquery-1.6.3.min.js"></script>-->
 		 <script src="js/modernizr-2.6.1.min.js"></script>
 	    <!--<script src="js/lean-slider.js"></script>-->
@@ -53,6 +55,18 @@
 		// 		pager:  '#nav'
 		//     });
 		// });
+
+		jQuery(document).ready(function($) {
+			$('.fancybox').fancybox({
+				// 'scrolling' :'yes',
+				'fitToView' :true,
+			   	'autoDimensions': false,
+			   	'content': '<embed src="WebsiteCoupon.pdf#nameddest=self&page=1&view=FitH,0&zoom=80,0,0" type="application/pdf" height="500px" width="1000px" />',
+		   		'onClosed': function() {
+		    	 $("#fancybox-inner").empty();
+		 		}
+		    });
+		});
 		</script>
 	</head>
 <body>
@@ -88,10 +102,10 @@
 								<h1>Sprinkler Repair &amp; Repiping Service</h1>
 							</hgroup>
 							<ul class="city_style">
-								<li>Sun City West</li>
-								<li>Sun City Grand</li>
-								<li>Sun City/Surprise </li>
-								<li>Goodyear/Peoria</li>
+								<li><img src="img/dark_grey.png" alt="" /> Sun City West</li>
+								<li><img src="img/dark_grey.png" alt="" /> Sun City Grand</li>
+								<li><img src="img/dark_grey.png" alt="" /> Sun City/Surprise </li>
+								<li><img src="img/dark_grey.png" alt="" /> Goodyear/Peoria</li>
 							</ul>
 							<img style="padding-left:70px" src="img/collar_piece.png" alt="" />
 						</header>
@@ -101,7 +115,7 @@
 						<a href="contact.php"><button class="btn btn-large btn-block btn-ultraviolet-rays-2" type="button">Schedule an Estimate or Repair</button></a>
 					</div> 
 					<div class="span5 success_button">
-						<a href="Website Coupon 2013.pdf" target="_blank"><button class="btn btn-large btn-block btn-miss-piggy-loves-kermit-5" type="button">Print Coupon - $25 Off Any Service</button></a>
+						<a class="fancybox fancybox.iframe" href="WebsiteCoupon.pdf" ><button class="btn btn-large btn-block btn-miss-piggy-loves-kermit-5" type="button">Print Coupon - $25 Off Any Service</button></a>
 					</div>
 				</div>
 			</div>
@@ -115,7 +129,7 @@
 						<div class="span8 span_style">
 							<div class="row row_style">
 								<div class="span7">
-									<h3 style="line-height:85px;float:left;width:400px">Sprinkler Repair and Repiping Services In</h3>
+									<h3 style="line-height:85px;float:left;width:400px">Sprinkler Repair and Repiping Services Is</h3>
 									<div class="lower-part">
 										<!-- <img class="lower_img" style="position:absolute" src="img/lower_img.png" alt="" /> -->
 									</div>
@@ -146,7 +160,7 @@
 
 							</div>
 							<div class="row row_style">
-								<div class="third_feature" style="margin-left:20px;">
+								<div class="third_feature" style="margin-left:20px;margin-top:25px">
 									<div id="sidebar_testimonial">
 										<div id="testimonials">
 											<a>
@@ -159,7 +173,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="third_feature" style="margin-left:32px">
+								<div class="third_feature" style="margin-left:32px;margin-top:25px">
 									<div id="sidebar_testimonial">
 										<div id="testimonials">
 											<a>
