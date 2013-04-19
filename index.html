@@ -58,11 +58,10 @@
 
 		jQuery(document).ready(function($) {
 			$('.fancybox').fancybox({
-				// 'scrolling' :'yes',
-				'fitToView' :true,
+				'fitToView' :false,
 			   	'autoDimensions': false,
-			   	'content': '<embed src="WebsiteCoupon.pdf#nameddest=self&page=1&view=FitH,0&zoom=80,0,0" type="application/pdf" height="500px" width="1000px" />',
-		   		'onClosed': function() {
+			   	'content':'<iframe src="WebsiteCoupon.pdf" style="width:600px; height:750px;zoom:78%" frameborder="0"></iframe>',
+		   		onClosed: function() {
 		    	 $("#fancybox-inner").empty();
 		 		}
 		    });
@@ -70,7 +69,6 @@
 		</script>
 	</head>
 <body>
-
 	<section class="introduction" role="main">
 	<!--header begins-->
 	    <div class="hero-unit" style="border:none">
@@ -107,7 +105,7 @@
 								<li><img src="img/dark_grey.png" alt="" /> Sun City/Surprise </li>
 								<li><img src="img/dark_grey.png" alt="" /> Goodyear/Peoria</li>
 							</ul>
-							<img style="padding-left:70px" src="img/collar_piece.png" alt="" />
+							<img class="graphis_pic" src="img/collar_piece1.png" alt="" />
 						</header>
 
 					</div>
@@ -127,12 +125,9 @@
 				<div class="row">
 					<div class="first_container">
 						<div class="span8 span_style">
-							<div class="row row_style">
+							<div class="row">
 								<div class="span7">
 									<h3 style="line-height:85px;float:left;width:400px">Sprinkler Repair and Repiping Services Is</h3>
-									<div class="lower-part">
-										<!-- <img class="lower_img" style="position:absolute" src="img/lower_img.png" alt="" /> -->
-									</div>
 								</div>
 								
 								<div class="span8 span_style">
@@ -143,10 +138,10 @@
 								</div>
 								
 							</div>
-							<div class="row row_style">
+							<div class="row">
 								<div class="feature">
 									<img class="small_logo" src="img/small_logo.png" alt="" />
-									<h3><!-- <i class="icon-copy icon-large"></i> -->
+									<h3>
 										 
 										Repiping Poly Tubing With Rigid PVC
 									</h3>
@@ -154,72 +149,74 @@
 								</div>
 								<div class="second_feature">
 									<img class="small_logo" src="img/small_logo.png" alt="" />
-									<h3><!-- <i class="icon-cloud icon-large"></i> -->Water Savings & Peace Of Mind</h3>
+									<h3>Water Savings & Peace Of Mind</h3>
 									<p>Water rates are increasing across the valley. Our controllers & regulated drip heads make water usage manageable. Effective results from each gallon of water used is possible with our simple system design.</p>
 								</div>
 
 							</div>
-							<div class="row row_style">
-								<div class="third_feature" style="margin-left:20px;margin-top:25px">
-									<div id="sidebar_testimonial">
-										<div id="testimonials">
-											<a>
-												<p>"I decided on changing our drip system to PVC pipe from the old flexible tubing as we were having a lot of trouble with leaks in the yard. I&acute;m very fussy about our yard and saw some of the work Sonora Sprinkler was doing. Sonora assured me my yard would look no different when they finished. Everything from the estimate to the men working and the final inspection was very professional. I&acute;m very satisfied and I highly recommend Sonora Sprinkler to everyone I talk to." </p>
-												<div class="testimonial_bottom_style">
-													<strong class="pull-right"><i>- Ed Baker </strong><br/></i>
-													<p class="pull-right"><i>Sun City Grand  </i></p>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="third_feature" style="margin-left:32px;margin-top:25px">
-									<div id="sidebar_testimonial">
-										<div id="testimonials">
-											<a>
-												<p>"If you are thinking of replacing your drip system, we would recommend that you consider Sonora Sprinkler. We had ours replaced in June 2011 and were very pleased with their workmanship and attention to detail. Rock was placed on tarps in order to trench for the PVC pipe and was replaced to its previous appearance. The crew was extremely polite and hard working. We found their staff to be very attentive to detail, & their knowledge of the project to be exceptional." </p>
-											    <div class="testimonial_bottom_style">
-													<strong class="pull-right"><i>- Parnell Murphy  </i></strong><br/>
-													<p class="pull-right"><i>Pebble Creek</i></p>
-											    </div>
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="row row_style" style="width:825px">
-									<div class="third_feature" style="margin-left:50px">
+							
+								<div class="first_row">
+									<div class="third_feature">
 										<div id="sidebar_testimonial">
 											<div id="testimonials">
-												<a> 
-													<p>"I just wanted you to know how satisfied I am with the new watering system you installed. It is working perfectly and the plants are now doing better with the systematic watering they are receiving. The job started on time and was completed as scheduled. You were always available to answer questions & your workmen always picked up at the end of the day. Being a snow-bird, you have been available to repair leaks in the old system promptly, and in my absence we have been able to take care of the problems by phone." </p>
+												<a>
+													<p>"I decided on changing our drip system to PVC pipe from the old flexible tubing as we were having a lot of trouble with leaks in the yard. I&acute;m very fussy about our yard and saw some of the work Sonora Sprinkler was doing. Sonora assured me my yard would look no different when they finished. Everything from the estimate to the men working and the final inspection was very professional. I&acute;m very satisfied and I highly recommend Sonora Sprinkler to everyone I talk to." </p>
 													<div class="testimonial_bottom_style">
-														<strong class="pull-right"><i>- Guy Chester   </i></strong><br/>
-														<p class="pull-right"><i>Sun City West  </i></p>
+														<strong class="pull-right"><i>- Ed Baker </strong><br/></i>
+														<p class="pull-right"><i>Sun City Grand  </i></p>
 													</div>
 												</a>
 											</div>
 										</div>
 									</div>
-								<div class="third_feature" style="margin-left:32px">
-								<div id="sidebar_testimonial">
-									<div id="testimonials">
-										<a>
-											<p>"I want to thank you for the exceptional maintenance of my outdoor drip system. Also, last year's conversion to solid pvc pipe versus the outdated builder-installed flex piping has been the best investment I've made in awhile. Your crews always took extra care and did a great job and I appreciate your professionalism in addressing any of my concerns. It is very refreshing to have a company like yours that listens to the customer, returns phone calls and shows a genuine concern for the customer's satisfaction. More businesses should follow your model."  </p>
-											<div class="testimonial_bottom_style">
-												<strong class="pull-right"><i>- Ken Kozlowski   </i></strong><br/>
-												<p class="pull-right"><i>Sun City Grand </i></p>
+									<div class="third_feature">
+										<div id="sidebar_testimonial">
+											<div id="testimonials">
+												<a>
+													<p>"If you are thinking of replacing your drip system, we would recommend that you consider Sonora Sprinkler. We had ours replaced in June 2011 and were very pleased with their workmanship and attention to detail. Rock was placed on tarps in order to trench for the PVC pipe and was replaced to its previous appearance. The crew was extremely polite and hard working. We found their staff to be very attentive to detail, & their knowledge of the project to be exceptional." </p>
+												    <div class="testimonial_bottom_style">
+														<strong class="pull-right"><i>- Parnell Murphy  </i></strong><br/>
+														<p class="pull-right"><i>Pebble Creek</i></p>
+												    </div>
+												</a>
 											</div>
-										</a>
+										</div>
 									</div>
 								</div>
-							</div>
-							</div>
-							</div>	
+									<div class="second_row">
+										<div class="third_feature">
+											<div id="sidebar_testimonial">
+												<div id="testimonials">
+													<a> 
+														<p>"I just wanted you to know how satisfied I am with the new watering system you installed. It is working perfectly and the plants are now doing better with the systematic watering they are receiving. The job started on time and was completed as scheduled. You were always available to answer questions & your workmen always picked up at the end of the day. Being a snow-bird, you have been available to repair leaks in the old system promptly, and in my absence we have been able to take care of the problems by phone." </p>
+														<div class="testimonial_bottom_style">
+															<strong class="pull-right"><i>- Guy Chester   </i></strong><br/>
+															<p class="pull-right"><i>Sun City West  </i></p>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									<div class="third_feature">
+									<div id="sidebar_testimonial">
+										<div id="testimonials">
+											<a>
+												<p>"I want to thank you for the exceptional maintenance of my outdoor drip system. Also, last year's conversion to solid pvc pipe versus the outdated builder-installed flex piping has been the best investment I've made in awhile. Your crews always took extra care and did a great job and I appreciate your professionalism in addressing any of my concerns. It is very refreshing to have a company like yours that listens to the customer, returns phone calls and shows a genuine concern for the customer's satisfaction. More businesses should follow your model."  </p>
+												<div class="testimonial_bottom_style">
+													<strong class="pull-right"><i>- Ken Kozlowski   </i></strong><br/>
+													<p class="pull-right"><i>Sun City Grand </i></p>
+												</div>
+											</a>
+										</div>
+									</div>
+								
+								</div>
+								</div>	
+							
 						</div>
 					</div>
 					<div class="second_container">
 				<!--sidebar testimonial begins-->
-					<!-- <div class="span4"> -->
 						<div class="testimonials_style">
 							<div class="third_feature ">
 								<h3>Testimonials</h3>
@@ -276,7 +273,6 @@
 								</div>
 							</div>
 						</div>
-					<!-- </div> -->
 				</div>
 				</div>
 				<!--sidebar testimonial end-->

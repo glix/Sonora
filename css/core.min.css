@@ -1,6 +1,6 @@
 /*!
  * Bootstrap v2.2.1
- *
+ * 
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
  * http://www.apache.org/licenses/LICENSE-2.0
@@ -508,6 +508,7 @@ input[type="reset"]{
     font-size: 18px;
     font-weight: 200;
     line-height: 36px;
+   /* height:644px;*/
 }
 .hero-unit li {
     line-height: 50px;
@@ -523,9 +524,9 @@ input[type="reset"]{
 .colophon a{
 	color:#000;
 }
-.row_style{
+/*.row_style{
 	width:825px;
-}
+}*/
 .span_style{
 	/*padding-top: 20px;*/
 	
@@ -557,7 +558,7 @@ label,input{
 	margin:auto;
 }
 .first_container{
-	width:825px;
+	width:810px;
 	float:left;
 	position:relative;
 	/*margin-top:-467px;*/
@@ -586,13 +587,26 @@ label,input{
 .sub_container{
 	width:100%;
 	border-top:5px solid #dedede;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;
-	margin-top:-488px;
+	margin-top:-569px;
 	position:absolute;
 
 }
 .archive_style{
 	width:140px;
 	float:left;
+}
+.graphis_pic{
+	padding-left:70px;
+	padding-top:100px;
+}
+.first_row{
+	float:left;
+	width:400px;
+}
+.second_row{
+	float:left;
+	width:360px;
+	/*margin-left:32px;*/
 }
 
 /* class: .btn-miss-piggy-loves-kermit-5,  color theme: Miss Piggy loves Kermit */
