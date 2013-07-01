@@ -241,10 +241,9 @@
 	font-weight: 400;
 
 }
-.history_style p{
+/*.history_style p{
 	padding-top:20px;
-	/*padding-left:30px;*/
-}
+}*/
 .contact_row{
 	background-color:#858585;
 	height:280px;
@@ -594,7 +593,7 @@ label,input{
 .sub_container{
 	width:100%;
 	border-top:5px solid #dedede;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;
-	margin-top:-535px;
+	margin-top:-433px;
 	position:absolute;
 
 }
@@ -621,6 +620,12 @@ label,input{
 	float:left;
 	width:360px;
 	/*margin-left:32px;*/
+}
+.article_head {
+	font-size: 29px;
+	text-align: justify;
+	width: 600px;
+	margin: auto;
 }
 
 /* class: .btn-miss-piggy-loves-kermit-5,  color theme: Miss Piggy loves Kermit */
