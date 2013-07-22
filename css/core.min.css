@@ -1,5 +1,5 @@
 /*! 
- * Bootstrap v2.2.1
+ * Bootstrap v2.2.1 
  * 
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
@@ -593,7 +593,7 @@ label,input{
 .sub_container{
 	width:100%;
 	border-top:5px solid #dedede;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;
-	margin-top:-433px;
+	margin-top:-440px;
 	position:absolute;
 
 }
@@ -622,12 +622,25 @@ label,input{
 	/*margin-left:32px;*/
 }
 .article_head {
-	font-size: 29px;
-	text-align: justify;
-	width: 600px;
-	margin: auto;
+	line-height: 30px;
+	padding-top: 10px;
 }
-
+.magic_img {
+	width:670px;
+}
+.custom_heading{
+	line-height: 27px;
+	padding-bottom: 5px;
+	padding-top: 10px;
+	font-size: 16.5px;
+}
+.sub_article h4 {
+	padding-top: 10px;
+	
+}
+.sub_article h2,h4 {
+	font-weight: 400;
+}
 /* class: .btn-miss-piggy-loves-kermit-5,  color theme: Miss Piggy loves Kermit */
 .btn-miss-piggy-loves-kermit-5 { text-shadow: 0px -1px 0px #799104; color: #ffffff; background-color: #97AF22; background-image: -moz-linear-gradient(top, #b5cd40, #799104); background-image: -ms-linear-gradient(top, #b5cd40, #799104); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b5cd40), to(#799104)); background-image: -webkit-linear-gradient(top, #b5cd40, #799104); background-image: -o-linear-gradient(top, #b5cd40, #799104); background-image: linear-gradient(top, #b5cd40, #799104); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b5cd40', endColorstr='#799104', GradientType=0); border-color: #97AF22 #799104 #799104 #97AF22; border-color: rgba(0, 0, 0, 0.25) rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.25); }
 .btn-miss-piggy-loves-kermit-5:hover, .btn-miss-piggy-loves-kermit-5:active, .btn-miss-piggy-loves-kermit-5.active, .btn-miss-piggy-loves-kermit-5.disabled, .btn-miss-piggy-loves-kermit-5[disabled] { background-color: #799104; }

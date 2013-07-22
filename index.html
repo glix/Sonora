@@ -26,7 +26,7 @@
 		
 		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png"> 
 		<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
 		<link rel="stylesheet" href="css/lean-slider.css" type="text/css" />
 	    <link rel="stylesheet" href="css/sample-styles.css" type="text/css" />
@@ -39,34 +39,12 @@
 		<meta property="og:site_name" content="CollabOapp">
 		<meta property="og:type" content="Web Application"> -->
 		<!-- jQuery library (served from Google) -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.6.3.min.js"></script>
 <!-- include Cycle plugin -->
-		<script type="text/javascript" src="js/jquery.cycle.all.latest.js"></script>
-		<script type="text/javascript" src="js/jquery.fancybox.js"></script>
-		<!--<script type="text/javascript" src="js/jquery-1.6.3.min.js"></script>-->
+		
 		 <script src="js/modernizr-2.6.1.min.js"></script>
-	    <!--<script src="js/lean-slider.js"></script>-->
-		 <script type="text/javascript">
-		// jQuery(document).ready(function($) {
-		//     $('#testimonials')
-		// 	.after('<div id="nav">')
-		// 	.cycle({
-		//         fx: 'fade', 
-		// 		pager:  '#nav'
-		//     });
-		// });
-
-		jQuery(document).ready(function($) {
-			$('.fancybox').fancybox({
-				'fitToView' :false,
-			   	'autoDimensions': false,
-			   	'content':'<iframe src="WebsiteCoupon.pdf" style="width:600px; height:750px;zoom:78%" frameborder="0"></iframe>',
-		   		onClosed: function() {
-		    	 $("#fancybox-inner").empty();
-		 		}
-		    });
-		});
-		</script>
+		
+		
 	</head>
 <body>
 	<section class="introduction" role="main">
@@ -113,8 +91,14 @@
 						<a href="contact.php"><button class="btn btn-large btn-block btn-ultraviolet-rays-2" type="button">Schedule an Estimate or Repair</button></a>
 					</div> 
 					<div class="span5 success_button">
-						<a class="fancybox fancybox.iframe" href="WebsiteCoupon.pdf" ><button class="btn btn-large btn-block btn-limekiln-3" type="button">Print Coupon - $25 Off Any Service</button></a>
+						<a class="fancybox" id="btn1" href="img/WebsiteCoupon.png" ><button class="btn btn-large btn-block btn-limekiln-3" type="button">Print Coupon - $10 Off Any Service</button></a>
 					</div>
+					<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+					<script type="text/javascript">
+						$(document).ready(function() {
+							$(".fancybox").fancybox();
+						});    
+					</script>
 				</div>
 			</div>
 		</div>
@@ -160,7 +144,7 @@
 										<div id="sidebar_testimonial">
 											<div id="testimonials">
 												<a>
-													<p>"I decided on changing our drip system to PVC pipe from the old flexible tubing as we were having a lot of trouble with leaks in the yard. I&acute;m very fussy about our yard and saw some of the work Sonora Sprinkler was doing. Sonora assured me my yard would look no different when they finished. Everything from the estimate to the men working and the final inspection was very professional. I&acute;m very satisfied and I highly recommend Sonora Sprinkler to everyone I talk to." </p>
+													<p>"I decided on changing our drip system to PVC pipe from the old flexible tubing as we were having a lot of trouble with leaks in the yard. I'm very fussy about our yard and saw some of the work Sonora Sprinkler was doing. Sonora assured me my yard would look no different when they finished. Everything from the estimate to the men working and the final inspection was very professional. I'm very satisfied and I highly recommend Sonora Sprinkler to everyone I talk to." </p>
 													<div class="testimonial_bottom_style">
 														<strong class="pull-right"><i>- Ed Baker </strong><br/></i>
 														<p class="pull-right"><i>Sun City Grand  </i></p>
@@ -317,11 +301,10 @@
 
 	
 
-	<!-- javascript -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<!-- javascript
 	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.0.min.js"><\/script>')</script>
-	
-	<script src="js/libs/bootstrap.min.js"></script>
+	 
+	<script src="js/libs/bootstrap.min.js"></script>-->
 	<script src="js/libs/jquery.placeholder.min.js"></script>
 	<script src="js/app.js"></script>
 	
