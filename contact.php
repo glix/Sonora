@@ -4,7 +4,7 @@
         // To send HTML mail, the Content-type header must be set
         $headers  = 'MIME-Version: 1.0' . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-        $admin_mail = 'testdata987@gmail.com';
+        $admin_mail = 'sonorasprinkler@gmail.com';
         $name=$_POST['name'];
         $email=$_POST['email'];
         $phone=$_POST['phone'];

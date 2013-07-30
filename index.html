@@ -96,7 +96,27 @@
 					<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
 					<script type="text/javascript">
 						$(document).ready(function() {
-							$(".fancybox").fancybox();
+							$(".fancybox").fancybox({
+					            title : "<a href='WebsiteCoupon.pdf' target='_blank'>View PDF</a>",
+					            beforeShow: function(){ // for v2.0.6+ use : 'beforeShow' 
+								    var win=null;
+								    var content = $('.fancybox-wrap'); // for v2.x use : var content = $('.fancybox-inner');
+								    $('.fancybox-skin').append('<div id="fancy_print"></div>'); // for v2.x use : $('.fancybox-wrap').append(...
+								    $('#fancy_print').bind("click", function(){
+								      win = window.open("width=200,height=200");
+								      self.focus();
+								      win.document.open();
+								      win.document.write('<'+'html'+'><'+'head'+'><'+'style'+'>');
+								      win.document.write('body, td { font-family: Verdana; font-size: 10pt;}');
+								      win.document.write('<'+'/'+'style'+'><'+'/'+'head'+'><'+'body'+'>');
+								      win.document.write(content.html());
+								      win.document.write('<'+'/'+'body'+'><'+'/'+'html'+'>');
+								      win.document.close();
+								      win.print();
+								      win.close();
+								    }); // bind
+								} //onComplete
+					        });
 						});    
 					</script>
 				</div>
@@ -117,7 +137,7 @@
 								<div class="span8 span_style">
 
 									<p>Daren Jantz, the owner of Sonora Sprinkler Inc., founded the company in 1995 as a small irrigation repair business. With his success through personalized service & commitment to customer satisfaction, the company has grown, continuing to provide premium service & a professional business experience.</p>
-									<p>We're now the go-to company for sprinkler system repair, installation, and rigid PVC repiping services in Sun City, Sun City West, Surprise, Goodyear, and Peoria, Arizona. Geared for efficiency, our technicians do system diagnostics and implement effective, long-term solutions, relieving homeowners the headache of tackling difficult water problems themselves.</p>
+									<p>The company delivers sprinkler system repair, installation, and rigid PVC repiping services in Sun City, Sun City West, Surprise, Goodyear, and Peoria, Arizona. Geared for efficiency, our technicians do system diagnostics and implement effective, long-term solutions, relieving homeowners the headache of tackling difficult water problems themselves.</p>
 
 								</div>
 								
@@ -129,8 +149,8 @@
 										 
 										Repiping Poly Tubing With Rigid PVC
 									</h3>
-									<p>If piping leaks & repairs have become a routine, our rigid PVC system is a permanent solution. Click here for the end of irrigation inconvenience.</p>
-								</div>
+									<p>If piping leaks & repairs have become a routine, our rigid PVC system is a permanent solution. <a href="contact.php" target="_self">Click here</a> for the end of irrigation inconvenience.</p>
+							  </div>
 								<div class="second_feature">
 									<img class="small_logo" src="img/small_logo.png" alt="" />
 									<h3>Water Savings & Peace Of Mind</h3>
@@ -222,7 +242,7 @@
 								<div id="sidebar_testimonial">
 									<div id="testimonials">
 										<a>
-											<p>"I will refer any friend or neighbor to Sonora Sprinkler. Ryan is forthright, knowledgeable, professional, and follows through promptly. My reconstruction of the whole drip system was completed as agreed in a timely manner at a competitive price." </p>
+											<p>"I will refer any friend or neighbor to Sonora Sprinkler. Their staff is forthright, knowledgeable, professional, and follows through promptly. My reconstruction of the whole drip system was completed as agreed in a timely manner at a competitive price." </p>
 											<div class="testimonial_bottom_style">
 												<strong class="pull-right"><i>- Jim Carpenter </i></strong><br/>
 												<p class="pull-right"><i>Pebble Creek  </i></p>
@@ -235,7 +255,7 @@
 								<div id="sidebar_testimonial">
 									<div id="testimonials">
 										<a>
-											<p>"After considerable research, I chose Sonora Sprinkler for the installation of my irrigation system. I am happy to report they did an excellent job. Sonora was competitive in their history, used quality materials & provided great service. Sonora was consistently on time, offered a good warranty, & fine followup service. I would highly recommend this company." </p>
+											<p>"After considerable research, I chose Sonora Sprinkler for the installation of my irrigation system. I am happy to report they did an excellent job. Sonora was competitive in their pricing, used quality materials & provided great service. Sonora was consistently on time, offered a good warranty, & fine followup service. I would highly recommend this company." </p>
 											<div class="testimonial_bottom_style">
 											    <strong class="pull-right"><i>- Steve Bart </i></strong><br/>
 											    <p class="pull-right"><i>Sun City Grand </i></p>
@@ -248,7 +268,7 @@
 							<div id="sidebar_testimonial">
 								<div id="testimonials">
 									<a>
-										<p>"My experience with Sonora Sprinkler last month in replacing the irrigation system with PVC was a very pleasant surprise. In an age where customer service seems to be an afterthought, I found this company to be the exception. I was very impressed with the professional, dependable and considerate work ethics of all involved. I was especially impressed with Ryan Jantz the General Manager. He was on time, polite, knowledgeable and returned phone calls when he said he would. The follow up was impressive. I feel confident in recommending Sonora Sprinkler to anyone in need of this service."</p>
+										<p>"My experience with Sonora Sprinkler last month in replacing the irrigation system with PVC was a very pleasant surprise. In an age where customer service seems to be an afterthought, I found this company to be the exception. I was very impressed with the professional, dependable and considerate work ethics of all involved. I was especially impressed with the General Manager. He was on time, polite, knowledgeable and returned phone calls when he said he would. The follow up was impressive. I feel confident in recommending Sonora Sprinkler to anyone in need of this service."</p>
 										<div class="testimonial_bottom_style">
 											<strong class="pull-right"><i>- Kay Larson </i></strong><br/>
 		                        			<p class="pull-right"><i>Corte Bella</i></p>
